@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultoria Nutricional</title>
+<style>
+:root {
+  --primary: #2563eb;
+  --background: #f9fafb;
+  --text: #1e293b;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+/* Hero com imagem de fundo */
+.hero {
+  background: url('https://images.unsplash.com/photo-1606788075761-3b35f20a01c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(37,99,235,0.6);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li::before {
+  content: "✔ ";
+  color: var(--primary);
+}
+.planos li::before {
+  content: "• ";
+}
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #1e40af;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Transforme sua saúde com acompanhamento personalizado</h1>
+    <p>Consultoria nutricional moderna, humana e próxima de você</p>
+  </div>
+</div>
+
+<section>
+  <h2>O que está incluso:</h2>
+  <ul>
+    <li>Acompanhamento diário via WhatsApp</li>
+    <li>Contato semanal para acompanhar sua evolução</li>
+    <li>Envio de feedbacks pelo app LiveClin</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Por que o feedback semanal é essencial?</h2>
+  <p>
+    É com ele que ajustamos seu plano de forma inteligente, respeitando suas necessidades e garantindo os melhores resultados possíveis.
+    Sem fórmulas prontas — o foco é você.
+  </p>
+</section>
+
+<section>
+  <h2>Planos disponíveis:</h2>
+  <ul class="planos">
+    <li>Mensal – Ideal para começar e testar a consultoria</li>
+    <li>Trimestral – Comprometimento para resultados mais sólidos</li>
+    <li>Semestral – Evolução contínua, com planejamento de médio prazo</li>
+    <li>Plano Casal – Dupla motivação, duplo cuidado</li>
+  </ul>
+</section>
+
+<section class="cta">
+  <a href="pagamento.html" class="btn">Ir para Pagamento</a>
+  <a href="https://wa.me/5521973252109" target="_blank" class="btn">Fale no WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2025 Consultoria Nutricional | Desenvolvido com carinho 💙</p>
+</footer>
+</body>
+</html>
